@@ -1,0 +1,9 @@
+syntax = "proto3";
+package common;
+
+import "google/protobuf/descriptor.proto";
+
+extend google.protobuf.MessageOptions {
+    bool is_db_model = 53001;
+    string table_name = 53002;
+}
